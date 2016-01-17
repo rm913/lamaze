@@ -1,0 +1,763 @@
+/*
+Theme Name: Dazzling-Child
+Theme URI: rm913.github.io/portfolio
+Author: Lamaze-DC
+Author URI: lamaze-dc.com
+Template: dazzling
+Description: Dazzling is a clean, modern, minimal and fully responsive flat design WordPress WooCommerce theme well suited for blogs, static and ecommerce websites. Theme can be used for travel, corporate, portfolio, photography, green thinking, nature, health, personal and any other creative and minimalistic style website. Dazzling theme is highly customizable with unlimited color options, slider, call for action button, several widget areas and much more that can be adjusted via Theme Options. The theme is built using Bootstrap 3, which makes it responsive and mobile friendly. It features infinite scroll, SEO friendly structure, logo upload, full-screen slider, call for action section, social media icons, popular post widget and translation ready setup. This theme supports WooCommerce and Jigoshop ecommerce plugins. Dazzling is also available in Mexican Spanish, Brazilian Portuguese, Finnish, Swedish, Dutch, Hungarian, German, Persian, Lithuanian and Polish. It is Multilingual ready and compatible with WPML plugin. It is probably the best free WordPress theme built for eStores and business websites.
+Version: 1.5.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: dazzling
+Domain Path: /languages/
+Tags: green, light, white, gray, black, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, responsive-layout, photoblogging, left-sidebar, translation-ready, custom-background, custom-colors, custom-menu, featured-images, full-width-template, post-formats, theme-options, threaded-comments
+
+
+This theme, like WordPress, is licensed under the GPL.
+
+Dazzling is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+
+*/
+@import url("../dazzling/style.css");
+/************************************Fonts********************************************/
+
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Calligraffitti);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+/*Clear Float */
+.clear{
+	clear: both;
+}
+body{
+	color: #000;
+}
+
+/*Header */
+
+.navbar-header{
+	padding-top: .5em;
+	padding-bottom:.5em;
+}
+
+
+/* Menu toggling - @media */
+
+@media (max-width: 844px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-collapse.collapse.in { 
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+/*Header font styles */
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	color: #008080;
+	/*font-family: 'Courgette', cursive; */
+	font-family: 'Poiret One', cursive;
+
+}
+p, button{
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+/* Navbar*/
+#menu-main-menu{
+ /* border: 3px solid #d0549f;
+  border-radius: 33%; */
+  padding-right: 2%;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-top: 1em;
+  height: 7em;
+}
+.navbar-default .navbar-nav li a{
+	color: #000;
+	/*font-family: 'Poiret One', cursive;*/
+	font-family: 'Open Sans Condensed', sans-serif;
+
+	font-size:  1.5em;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus, .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+  color: #999;
+ /* background-image: url('http://localhost/lamaze.com/wordpress/wp-content/uploads/2015/07/nav-logo.png');*/
+  border-radius: 57%;
+  background-color: #e8e8e8;
+  background-repeat: no-repeat;
+  background-position: .3em 2em;
+  transition: opacity 0.5s linear;
+
+}
+/*Front Page */
+/*Main Section*/
+/*The Slider Text*/
+
+.page-id-2 #content{
+	margin-top: 0;
+}
+.page-id-2 #main{
+	margin-top: -2em;
+}
+
+.flex-caption{
+	  bottom: 11em;
+}
+
+.entry-title{
+	background-color: rgba(0,0,0,0) !important;
+	color: #000 !important;
+	font-size: 3rem !important;
+	padding-left: 0 !important;
+	font-weight: 600 !important;
+}
+
+.excerpt{
+	background: none !important;
+	color: #000 !important;
+	font-size: 2.5rem !important;
+	width: 45% !important;
+	padding-right: 3em !important;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin-bottom: -2em;
+}
+.call-action{
+	width: 100%;
+	background-color:#008b8b;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	
+}
+#call-buttons{
+	width:33%;
+	margin: 0 auto;
+} 
+#call-buttons .classes, #call-buttons .register{
+	font-size: 1.9rem;
+	width: 45%;
+}
+
+.top-main{
+	background-size: cover;
+}
+.top-main h1{
+	font-size: 4rem;
+}
+.top-main p{
+	font-size: 2rem;
+}
+/*Buttons*/
+.classes{
+  border: .2em solid lightgray;
+  border-radius: 19%;
+font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.classes a{
+   	color: #000 !important;
+}
+.classes:hover{
+    background-color: #f4c2ce !important;
+}
+.register{
+	margin-left: 2%;
+  	border: .2em solid #008080;
+	border-color: lightgray;
+  	border-radius: 19%;
+  	background-color: #008080;
+  	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+
+}
+.register a{
+	color: #000 !important;
+}
+.register:hover{
+background-color: #f4c2ce !important;
+}
+/* Border */
+.border{
+  border-top: .3em solid #d0549f;
+  width: 62%;
+  margin: 0 auto;
+}
+
+.top-main~.border{
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
+
+/*How is Lamaze Different */
+.entry-content h2{
+	color: #000;
+}
+#confidence{
+	font-family: 'Calligraffitti', cursive;
+	font-size: 2em;
+ 	margin-top: 1em;
+}
+.different{
+	margin-top: 5em;
+	width: 90%;
+  	margin: 1.5em auto;
+  	font-size: 2rem;
+  	color: gray;
+}
+.different li{
+	  list-style-type: none;
+ 	  margin-bottom: 1em;
+	  font-family: 'Open Sans', sans-serif;
+	  font-size: .79em;
+	  color: #000;
+}
+#about-us{
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+#best-classes{
+	float: left;
+	width: 38%;
+	margin-top: 6%;
+}
+#best-classes img{
+	margin: 0 auto;
+	display: block;
+}
+#best-classes p{
+	font-family: 'Playfair Display', serif;
+	font-size: 2rem;
+	text-align: center;
+	color: #000;
+}
+#about-us~.border{
+	margin-top: 6%;
+}
+/*video*/
+iframe, object {
+	max-width: 60em;
+	max-height: 40em;
+	float: left;
+	width: 58%;
+	border: 1em solid rgba(0,0,0,.1);
+  	border-radius: 7%;
+  	margin-right: 4%
+}
+
+}
+/* Scroll to top button */
+
+.scroll-to-top:hover{
+	background: #008080;
+	}
+
+/* Why Lamaze - bottom of home page */
+#post-2 .different img{
+border-radius: 100%;
+  border: .2em solid #008b8b;
+padding: .2em;
+margin-right: .3em;
+}
+
+/***********Classes Page*************************
+********************************************************************************************/
+
+/* title */
+.entry-title{
+  text-align: center;
+  font-size: 5rem;
+  color: #008080;
+}
+.nav-classes{
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.nav-classes li{
+	float: left;
+	width: 22%;
+	padding: 1%;
+	list-style-type: none;
+	background-color: #008080;
+	margin-right: 2em;
+  	height: 5.3em;
+  	border-radius: 18%;
+  	text-align: center;
+  	margin-bottom: .5em;
+  }
+.nav-classes li:hover{
+  	background-color: rgba(0,0,0,.1);
+  	color: #d0549f;
+  }
+.nav-classes li a{
+	color: #fff;
+	font-family: 'Open Sans condensed', sans-serif;
+	font-size: 2rem;
+}
+
+
+
+
+/* changing the navigation styles for cols and rows */
+
+#post-14 .row{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 1em;
+	width: 123%;
+
+}
+#post-14 .container{
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/*take away space of sidebar in pages*/
+
+#primary{
+	width: 100%;
+}
+.content-area{
+	width: 100%;
+}
+.left{
+	float: left;
+}
+.picture{
+	float: right;
+	 border: 2em solid lightgray;
+  	border-radius: 16%;
+}
+
+/*REgister Buttons for Classes */
+#post-14 .register{
+	width: 18%;
+	margin-left: 0 !important;
+}
+#post-14 .register a{
+        color: #fff !important;
+}
+.lamaze-symptoms{
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+
+}
+.lamaze-symptoms:first-of-type{
+	margin-right: 4em;
+}
+#post-14 li{
+	font-family: 'Open Sans', sans-serif;
+}
+.class-title{
+	font-weight: 600;
+}
+.class-header{
+	width: 100%;
+}
+.class-description{
+	width: 71%;
+	float: left;
+	padding-right: .2em;
+}
+.class-details h4{
+	font-weight: 600;
+}
+#post-14 .border{
+	margin-top: 4em;
+	}
+.price{
+color: #008080;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 1.8rem;
+}
+/* Links Page */
+#post-26 ul{
+list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2.3em;
+}
+#post-26 table a{
+color: #008b8b !important;
+font-family: 'Open Sans', sans-serif !important;
+}
+#post-26 table a:hover{
+color: #000 !important;
+}
+
+#post-26 table{
+margin-left: 6em;
+border: 1em solid #d4cdcf;
+float: left;
+font-family: 'Open Sans', sans-serif !important;
+}
+#post-26 tr:nth-child(odd){
+background-color: #d4cdcf;
+}
+#post-26 img{
+float: left;
+}
+#post-26 col:second-child{
+padding-left: 2em;
+}
+/********************Reviews Page*****************************************/
+.pink{
+  width: 30%;
+  background-color: lightpink;
+  border-radius: 29%;
+  padding: 1.7em;
+  float: left;
+  margin-left: 1.5em;
+}
+.blue{
+  width: 30%;
+  background-color: lightblue;
+  border-radius: 29%;
+  padding: 1.7em;
+  float: left;
+  margin-left: 1.5em;
+}
+.gray{
+  width: 30%;
+  background-color: lightgray;
+  border-radius: 29%;
+  padding: 1.7em;
+float: left;
+margin-left: 1.5em;
+}
+.img{
+  height: 9em;
+  padding-top: 2em;
+  background-color: aliceblue;
+  padding-left: 6em;
+}
+/*Awards **************************************************************************/
+#post-24 h1{
+font-weight: 600;
+color: #000;
+}
+.award{
+float: left;
+
+}
+.award:nth-of-type(odd){
+width: 33%;
+
+}
+.award:nth-of-type(1){
+margin-right: 6em;
+margin-top: 2em;
+}
+.award:nth-of-type(even){
+width: 18%;
+margin-right: 6em;
+
+}
+.award:last-of-type{
+margin-top: -1em;
+}
+/******************************Resources**************************************************************/
+.nav-resources{
+margin-bottom: 11em;
+}
+.nav-resources li{
+	float: left;
+	width: 17%;
+	padding: 1%;
+	list-style-type: none;
+	margin-right: 2em;
+  	height: 5.3em;
+  	border-radius: 18%;
+  	text-align: center;
+  	margin-bottom: .5em;
+  }
+.nav-resources li:hover{
+  	background-color: rgba(0,0,0,.1) !important;
+  	color: #d0549f;
+  }
+.nav-resources li a{
+	color: #000 !important;
+	font-family: 'Open Sans condensed', sans-serif;
+	font-size: 2rem;
+}
+.nav-resources li:nth-of-type(odd) {
+  background-color: pink;
+}
+
+.nav-resources li:nth-of-type(even) {
+  background-color: lightblue;
+}
+#resources{
+clear:both;
+}
+#resources li{
+list-style-type: none;
+}
+#resources h3, h4{
+font-weight: 600;
+}
+#resources h3{
+margin-bottom: 1em;
+}
+#resources a{
+text-decoration: none;
+}
+/*******************Teachers Page ****************************************************************/
+.post-18 h2{
+color: #008080;
+font-weight: 600;
+}
+/***********************Responsive Styles for Home Page*****************************************************************/
+@media (max-width: 1151px) {
+.flex-caption{
+bottom: 8em !important;
+}
+.page-id-2 .entry-title{
+width: 43%;
+}
+}
+
+@media (max-width: 1122px) {
+.flex-caption{
+bottom: 6em !important;
+}
+}
+@media (max-width: 1032px) {
+.flex-caption{
+bottom: 4em !important;
+}
+}
+@media (max-width: 1013px) {
+.page-id-2 .entry-title{
+width: 32% !important;
+}
+}
+
+@media (max-width: 953px) {
+.flex-caption{
+bottom: 3em !important;
+line-height: 1.5;
+}
+}
+@media (max-width: 950px) {
+.page-id-2 .entry-title{
+width: 34% !important;
+}
+}
+
+@media (max-width: 935px) {
+.flex-caption{
+bottom: 2.5em !important;
+line-height: 1.5;
+}
+}
+@media (max-width: 919px) {
+.flex-caption .excerpt {
+  display: none !important;
+}
+.flex-caption .entry-title{
+ margin-bottom: 4em !important;
+}
+}
+@media (max-width: 905px) {
+.flex-caption {
+  bottom: .5em !important;
+  line-height: 1.3;
+}
+}
+
+@media (max-width: 865px) {
+.post-id-2 .excerpt{
+display: none !important;
+}
+.flex-caption .entry-title{
+ margin-bottom: 0em !important;
+}
+.flex-caption{
+bottom: 7em !important;
+}
+}
+@media (max-width: 862px) {
+#best-classes {
+  float: none !important;
+   clear: both !important;
+   width: 100% !important;
+}
+#about-us iframe{
+float: none !important;
+width: 100% !important;
+}
+}
+@media (max-width: 768px) {
+.flex-caption {
+  display: block !important;
+}
+}
+@media (max-width: 660px) {
+.flex-caption {
+  bottom: 4em !important;
+}
+}
+@media (max-width: 602px) {
+.flex-caption {
+  bottom: 2em !important;
+}
+}
+@media (max-width: 542px) {
+.flex-caption {
+  position: relative !important;
+  bottom: 0em !important; 
+}
+.flexslider .slides img{
+display: none !important;
+}
+.page-id-2 .entry-title{
+width: 100% !important;
+}
+.page-id-2 .call-action{
+padding: 0 !important;
+background-color: transparent !important;
+}
+#call-buttons{
+width: 100% !important;
+}
+}
+/***************************************Responsive Styles for Classes Page **********************************************/
+
+@media (max-width: 1143px) {
+.page-id-14 .nav-classes{
+margin-left: 7em !important;
+}
+}
+@media (max-width: 1002px) {
+.page-id-14 .nav-classes{
+margin-left: 5em !important;
+}
+}
+@media (max-width: 706px) {
+.page-id-14 .nav-classes{
+display: none !important;
+}
+.page-id-14 .picture{
+display: none !important;
+}
+}
+
+/*****************************************Responsive Styles for TEachers page ********************************************/
+@media (max-width: 408px) {
+.page-id-18 img{
+display: none !important;
+}
+}
+
+/****************************************Responsive Styles for Reviews Page***********************************************/
+@media (max-width: 990px) {
+.page-id-24 .pink img{
+display: none !important;
+}
+.page-id-24 .pink, .blue, .gray {
+width: 46% !important;
+}
+.page-id-24 .gray:nth-of-type(2){
+margin-top: -7em !important;
+}
+.page-id-24 .pink:nth-of-type(2){
+margin-top: -6em !important;
+}
+.page-id-24 .award:nth-of-type(1){
+margin-right: 3em !important;
+}
+}
+@media (max-width: 1007px){
+.page-id-24 .pink, .blue, .gray{
+width: 46%;
+}
+.page-id-24 .img{
+display:none !important;
+}
+}
+@media (max-width: 990px){
+.page-id-24 .pink, .blue, .gray{
+clear: both;
+float: none;
+width: 100% !important;
+}
+.page-id-24 .gray:nth-of-type(2){
+margin-top: 0em !important;
+}
+.page-id-24 .pink:nth-of-type(2){
+margin-top: 0em !important;
+}
+}
+
+/***************************************************Responsive Styles for Links Page**************************************/
+@media (max-width: 991px){
+#post-26 table{
+margin-left: 0em !important;
+float: none !important;
+clear: both !important;
+}
+#post-26 img{
+display: none !important;
+}
+}
+@media screen and (max-width: 800px) {
+.post-26 table {width:100%;}
+.post-26 thead {display: none;}
+.post-26 tr:nth-of-type(2n) {background-color: inherit;}
+.post-26 tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;}
+.post-26 tbody td {display: block;  text-align:center;}
+.post-26 tbody td:before { 
+    content: attr(data-th); 
+    display: block;
+    text-align:center;  
+  }
+}
+/*************************************************Responsive Styles for Resources Page************************************/
+@media (max-width: 1213px){
+.nav-resources li{
+width: 30% !important;
+}
+}
+@media (max-width: 1005px){
+.nav-resources li{
+width: 45% !important;
+}
+}
+@media (max-width: 690px){
+.nav-resources li{
+width: 100% !important;
+float: none !important;
+clear: both !important;
+}
+}
